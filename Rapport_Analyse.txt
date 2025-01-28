@@ -37,4 +37,12 @@ Tenure
 6      9.552929%
 10     3.565981%
 0      3.026905%
-Pour le nombre d'ann
+Pour le nombre d'années que le client où les clients restent le plus chez nous sont :
+2,7,8,4,5,1,9,3,6 à presque à proportion égale.
+
+- NumOfProducts: 
+2    51.05%
+1    46.91%
+3     1.74%
+4     0.28%
+Plus de la moitié(51.05%) de nos clients ont deux cartes, 46.91% de nos clients ont une seule carte, 1.74% ont 3 cartes et 0.28% ont 4 cartes.
