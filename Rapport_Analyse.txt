@@ -1,0 +1,40 @@
+Dans le cadre de mon projet dont l'objectif est de developper un modèle qui va nous permettre de predire les clients qui vont rester dans la banque.
+Pour ce faire J'ai commmencé par l'Analyse exploratoire de notre jeu de données.
+Pour commencer dans notre jeu de données, nous avons 14 colonnes qui sont nos variables qui representent les caracteristiques de nos clients et 143579 lignes qui representent chaque client de la banque.
+Il n y'a aucune valeur nulle ou maquantes dans nos colonnes.
+
+Ensuite j'ai fait une analyse univariée des variables discrète qui sont :
+- Surname  
+- CreditScore      
+- Geography  
+- Gender         
+- Tenure    
+- NumOfProducts  
+- HasCrCard          
+- IsActiveMember   
+- Exited     
+Les observation qui sont sortis de ces analyses sont les suivantes :
+
+- CreditScore : Selon nos analyses nous avons remarqué que 97 % de nos  clients ( 139435 clients sur 143579 )  ont un CreditScore superieur ou égale à 500 points et 2%(4144 clients sur 143579 ) ont un CreditScore inferieur 500 points. 
+- Geography : Dans cette analyse nous avons observé que:
+57.03% (ce qui represente 81886 Clients ) de nos clients viennent de la France,
+22% (ce qui represente 31588 Clients ) de nos clients viennent de l'Espagne, 
+ET 20.96% (ce qui represente 30105 Clients )  de nos clients viennent de l'Allemangne 
+
+- Gender:
+Nos clients sont majoritairement des hommes à 56.39% contre 43.60% de femme.
+
+- Tenure:
+Tenure
+2     10.980714%
+7     10.777342%
+8     10.636653%
+4     10.626206%
+5     10.436067%
+1     10.170707%
+9     10.138669%
+3     10.087826%
+6      9.552929%
+10     3.565981%
+0      3.026905%
+Pour le nombre d'ann
