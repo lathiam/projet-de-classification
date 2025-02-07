@@ -3,7 +3,7 @@ Pour ce faire J'ai commmencé par l'Analyse exploratoire de notre jeu de donnée
 Pour commencer dans notre jeu de données, nous avons 14 colonnes qui sont nos variables qui representent les caracteristiques de nos clients et 143579 lignes qui representent chaque client de la banque.
 Il n y'a aucune valeur nulle ou maquantes dans nos colonnes.
 
-Ensuite j'ai fait une analyse univariée des variables discrète qui sont :
+Analyse univariée des variables discrète:
 - Surname  
 - CreditScore      
 - Geography  
@@ -46,3 +46,168 @@ Pour le nombre d'années que le client où les clients restent le plus chez nous
 3     1.74%
 4     0.28%
 Plus de la moitié(51.05%) de nos clients ont deux cartes, 46.91% de nos clients ont une seule carte, 1.74% ont 3 cartes et 0.28% ont 4 cartes.
+
+
+Analyse univariée des variables continues:
+
+-Age:
+
+count    143579.000000
+mean         38.144476
+std           8.871711 
+min          18.000000
+25%          32.000000
+50%          37.000000
+75%          42.000000
+max          92.000000
+Name: Age, dtype: float64
+l'âge minimum des nos clients est de 18.0 ans.
+50% des clients ont ou moins de 37.0 ans.
+l'âge moyen des clients est de 38.14 ans.
+l'âge maximum des nos clients est de 92.0 ans.
+
+
+-Balance:
+
+count    143579.000000
+mean      55533.640642
+std       62822.616346
+min           0.000000
+25%           0.000000
+50%           0.000000
+75%      119948.090000
+max      250898.090000
+Name: Balance, dtype: float64
+Le solde minimum de nos clients est de 0.00 euros.
+50% des clients ont un solde de 0.00 euros ou moins.
+Le solde moyen des clients est de 55533.64 euros.
+Le solde maximum de nos clients est de 250898.09 euros.
+
+
+-EstimatedSalary: 
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 143579 entries, 0 to 143578
+Data columns (total 14 columns):
+ #   Column           Non-Null Count   Dtype  
+---  ------           --------------   -----  
+ 0   ID               143579 non-null  int64  
+ 1   CustomerId       143579 non-null  int64  
+ 2   Surname          143579 non-null  object 
+ 3   CreditScore      143579 non-null  int64  
+ 4   Geography        143579 non-null  object 
+ 5   Gender           143579 non-null  object 
+ 6   Age              143579 non-null  float64
+ 7   Tenure           143579 non-null  int64  
+ 8   Balance          143579 non-null  float64
+ 9   NumOfProducts    143579 non-null  int64  
+ 10  HasCrCard        143579 non-null  float64
+ 11  IsActiveMember   143579 non-null  float64
+ 12  EstimatedSalary  143579 non-null  float64
+ 13  Exited           143579 non-null  int64  
+dtypes: float64(5), int64(6), object(3)
+memory usage: 15.3+ MB
+ID	CustomerId	Surname	CreditScore	Geography	Gender	Age	Tenure	Balance	NumOfProducts	HasCrCard	IsActiveMember	EstimatedSalary	Exited
+0	37765	15794860	Ch'eng	627	France	Male	28.0	7	131694.04	1	1.0	1.0	161205.61	0
+1	130453	15728005	Hargreaves	597	France	Male	34.0	2	0.00	2	0.0	1.0	181419.29	0
+2	77297	15686810	Ts'ui	724	France	Male	39.0	7	0.00	2	1.0	1.0	100862.54	0
+3	40858	15760244	Trevisano	663	Germany	Female	56.0	5	118577.24	3	1.0	0.0	61164.45	1
+4	19804	15810563	French	627	France	Female	33.0	5	0.00	2	1.0	1.0	103737.82	0
+5	137682	15801466	Gray	574	France	Female	34.0	2	122524.61	2	1.0	0.0	88463.63	0
+6	42541	15621654	Macleod	671	France	Male	35.0	2	0.00	2	1.0	1.0	183566.85	0
+7	148483	15585985	Ritchie	678	Spain	Male	32.0	2	124586.93	1	1.0	1.0	181218.37	0
+8	14108	15654183	Chibueze	850	France	Female	27.0	1	0.00	1	1.0	1.0	189268.81	0
+9	15670	15648005	Tsao	672	Spain	Male	33.0	2	0.00	1	1.0	1.0	182738.00	1
+Surname
+Hsia       2107
+T'ien      1971
+Hs?        1387
+Ts'ui      1364
+Maclean    1364
+Kao        1359
+P'eng      1297
+H?         1251
+Hsueh      1145
+Shih       1079
+Name: count, dtype: int64
+Nombre de personnes avec un CreditScore supérieur ou égal à 500: 139435, ce qui représente 97.11%
+Nombre de personnes avec un CreditScore inférieur à 500: 4144, ce qui représente 2.89%
+
+Geography
+France     57.032017
+Spain      22.000432
+Germany    20.967551
+Name: proportion, dtype: float64
+
+Gender
+Male      56.391255
+Female    43.608745
+Name: proportion, dtype: float64
+
+Tenure
+2     10.980714
+7     10.777342
+8     10.636653
+4     10.626206
+5     10.436067
+1     10.170707
+9     10.138669
+3     10.087826
+6      9.552929
+10     3.565981
+0      3.026905
+Name: proportion, dtype: float64
+
+NumOfProducts
+2    51.052731
+1    46.917725
+3     1.748167
+4     0.281378
+Name: proportion, dtype: float64
+
+
+Carte de crédit : 75.41% ont une carte, 24.59% n'en ont pas.
+Membres actifs : 49.68% sont actifs, 50.32% ne le sont pas.
+Clients partis : 21.21% sont partis, 78.79% sont restés.
+
+count    143579.000000
+mean         38.144476
+std           8.871711
+min          18.000000
+25%          32.000000
+50%          37.000000
+75%          42.000000
+max          92.000000
+Name: Age, dtype: float64
+l'âge minimum des nos clients est de 18.0 ans.
+50% des clients ont ou moins de 37.0 ans.
+l'âge moyen des clients est de 38.14 ans.
+l'âge maximum des nos clients est de 92.0 ans.
+
+count    143579.000000
+mean      55533.640642
+std       62822.616346
+min           0.000000
+25%           0.000000
+50%           0.000000
+75%      119948.090000
+max      250898.090000
+Name: Balance, dtype: float64
+Le solde minimum de nos clients est de 0.00 euros.
+50% des clients ont un solde de 0.00 euros ou moins.
+Le solde moyen des clients est de 55533.64 euros.
+Le solde maximum de nos clients est de 250898.09 euros.
+
+count    143579.000000
+mean     112530.072465
+std       50301.718378
+min          11.580000
+25%       74580.800000
+50%      117931.100000
+75%      155149.685000
+max      199992.480000
+Name: EstimatedSalary, dtype: float64
+Le salaire estimé minimum de nos clients est de 11.58 euros.
+50% des clients ont un salaire estimé de 117931.10 euros ou moins.
+Le salaire estimé moyen des clients est de 112530.07 euros.
+Le salaire estimé maximum de nos clients est de 199992.48 euros.
